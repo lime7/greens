@@ -1,7 +1,0 @@
-{
-	"extends": "stylelint-config-standard",
-	"fix": true,
-	"rules": {
-  	"at-rule-no-unknown": null
-	}
-}
