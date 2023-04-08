@@ -1,0 +1,13 @@
+// style.scss
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import 'swiper/css';
+// @import 'swiper/css/pagination';
+
+@import 'fonts';
+@import 'base';
+@import 'components';
+@import 'animations';
+@import 'vendors';

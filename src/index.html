@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+
+    <!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge" /><![endif]-->
+
+    <title><%= htmlWebpackPlugin.options.templateParameters.title %></title>
+
+    <!-- Set the viewport width to device width for mobile -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Disable Phone number linking -->
+    <meta name="format-detection" content="telephone=no,email=no,url=no">
+    <meta name="format-detection" content="telephone=no">
+    <!-- <meta http-equiv="x-rim-auto-match" content="none"> -->
+
+    <!-- Place favicon.ico in the root directory -->
+    <link rel="icon" type="image/x-icon" href="favicon.ico">    
+    <meta name="theme-color" content="#fff" >
+    <meta name="color-scheme" content="light" >
+
+    <link rel="canonical" href="<%= htmlWebpackPlugin.options.templateParameters.url %>" />
+    <link rel=icon type=image/png href=./icons/192.png />
+    <link rel=manifest href=./manifest.json />
+
+    <meta name="application-name" content="<%= htmlWebpackPlugin.options.templateParameters.title %>" />
+    <meta name="author" content="<%= htmlWebpackPlugin.options.templateParameters.author %>" />
+    <meta name="description" content="<%= htmlWebpackPlugin.options.templateParameters.description %>" />
+    <meta name="keywords" content="<%= htmlWebpackPlugin.options.templateParameters.keywords %>" />
+    <meta name="referrer" content="strict-origin" />
+
+    <meta itemprop="name" content="<%= htmlWebpackPlugin.options.templateParameters.title %>" />
+    <meta itemprop="description" content="<%= htmlWebpackPlugin.options.templateParameters.description %>" />
+    <meta itemprop="image" content="./icons/192.png" />
+
+    <meta name="apple-touch-fullscreen" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes" >
+
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="<%= htmlWebpackPlugin.options.templateParameters.url %>" />
+    <meta property="og:title" content="<%= htmlWebpackPlugin.options.templateParameters.title %>" />
+    <meta property="og:description" content="<%= htmlWebpackPlugin.options.templateParameters.description %>" />
+    <meta property="og:image" content="./icons/512.png" />
+    <meta property="og:locale" content="en_US" />
+
+    <meta name="twitter:card" content="app" />
+    <meta name="twitter:title" content="<%= htmlWebpackPlugin.options.templateParameters.title %>" />
+    <meta name="twitter:description" content="<%= htmlWebpackPlugin.options.templateParameters.description %>" />
+    <meta name="twitter:url" content="<%= htmlWebpackPlugin.options.templateParameters.url %>" />
+    <meta name="twitter:image" content="./icons/512.png" />
+
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=<%= htmlWebpackPlugin.options.templateParameters.analytics %>"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', '<%= htmlWebpackPlugin.options.templateParameters.analytics %>');
+    </script>
+  </head>
+  <body>
+    <div class="project overflow-hidden min-h-screen">
+      @require('./layouts/header.html')
+
+      <!-- Main content  : start -->
+      <main class="page-content">
+        @require('./section/intro.html')
+        @require('./section/services.html')
+        @require('./section/about.html')
+        @require('./section/category.html')
+        @require('./section/nums.html')
+        @require('./section/products.html')
+        @require('./section/call.html')
+        @require('./section/testimonials.html')
+        @require('./section/partners.html')
+        @require('./section/blog.html')
+      </main>
+
+      @require('./layouts/footer.html')
+      @require('./layouts/sprite.html')
+    </div>
+  </body>
+</html>

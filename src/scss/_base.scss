@@ -1,0 +1,59 @@
+// Base
+.icon {
+  // display: inline-block;
+  // width: 1rem;
+  // height: 1rem;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
+  -webkit-box-flex: 0;
+  -ms-flex-positive: 0;
+  flex-grow: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+}
+
+a[href*="mailto:"],
+a[href*="tel:"] {
+  white-space: nowrap;
+}
+
+html {
+  // font-size: 16px;
+
+  // @include media-breakpoint-down(xxl) {
+  //   font-size: 14px;
+  // }
+}
+
+body {
+  @apply font-sans;
+  @apply text-dark;
+  @apply bg-light;
+}
+
+
+@layer utilities {
+  *::-webkit-scrollbar {
+    -webkit-appearance: none;
+  }
+
+  *::-webkit-scrollbar:vertical {
+    @apply w-2;
+  }
+
+  *::-webkit-scrollbar:horizontal {
+    @apply w-2;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    @apply rounded-full;
+    @apply border-0;
+    background-color: rgba(0,0,0, .75);
+  }
+
+  ::-webkit-scrollbar-track {
+    background-color: rgba(0,0,0, .2);
+  }
+
+}

@@ -1,0 +1,94 @@
+<header
+  class="
+    js-header
+    border-b-1
+    border-b-gray
+    shadow-xs
+    backdrop-blur
+    bg-white/[.92]
+    lg:backdrop-blur-none
+    lg:bg-transparent
+    lg:shadow-none
+    lg:border-0
+    lg:bg-header
+    bg-cover
+    bg-top
+    xl:bg-bottom
+    bg-no-repeat
+    h-20
+    lg:h-29
+    fixed
+    top-0
+    left-0
+    right-0
+    z-50
+  ">
+  <div
+      class="
+        lg:container
+        px-4
+        h-full
+      ">
+    <div
+        class="
+          grid
+          grid-cols-12
+          gap-4
+          items-start
+          justify-between
+        ">
+      <div
+        class="
+          col-span-4
+          sm:col-span-3
+          lg:col-span-3
+          pt-4">
+        <div class="mb-0">
+          <a
+            href="/"
+            aria-label="Logo"
+            class="
+              inline-flex
+              items-center
+              justify-center
+              -mt-2
+              outline-0
+            ">
+            @require('../components/brand.html')
+            <span
+              class="
+                hidden
+                sm:block
+                text-base
+                leading-7
+                md:text-2xl
+                md:leading-9
+                font-semibold
+                uppercase
+                tracking-[1.5px]
+                md:tracking-[3px]
+                text-dark
+              ">Greens</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="hidden lg:block lg:col-span-6">
+        <div class="lg:pt-1">
+          @require('../layouts/nav.html')
+        </div>
+      </div>
+
+      <div class="col-span-8 sm:col-span-9 lg:col-span-3 pt-4">
+        <div class="lg:pt-1 -mr-4">
+          @require('../layouts/top-action.html')
+        </div>
+      </div>
+    </div>
+  </div>  
+</header>
+
+@require('./right-sidebar-menu.html')
+@require('./right-sidebar-like.html')
+@require('./right-sidebar-order.html')
+@require('./right-sidebar-contact.html')

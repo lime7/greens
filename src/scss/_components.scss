@@ -1,0 +1,70 @@
+// Components
+
+
+
+
+
+.before\:bg-decor::before {
+  background-image: theme('backgroundImage.decor') !important;
+
+  @supports (background-image: -webkit-image-set(theme('backgroundImage.decorWebp') 1x)) {
+    & {background-image: -webkit-image-set(theme('backgroundImage.decorWebp') 1x) !important; }
+  }
+}
+
+.before\:bg-service::before {
+  background-image: theme('backgroundImage.service') !important;
+
+  @supports (background-image: -webkit-image-set(theme('backgroundImage.serviceWebp') 1x)) {
+    & {background-image: -webkit-image-set(theme('backgroundImage.serviceWebp') 1x) !important; }
+  }
+}
+
+.before\:bg-waves-white::before {
+  background-image: theme('backgroundImage.waves-white') !important;
+
+  @supports (background-image: -webkit-image-set(theme('backgroundImage.waves-whiteWebp') 1x)) {
+    & {background-image: -webkit-image-set(theme('backgroundImage.waves-whiteWebp') 1x) !important; }
+  }
+}
+
+
+.before\:bg-num::before {
+  background-image: theme('backgroundImage.num') !important;
+
+  @supports (background-image: -webkit-image-set(theme('backgroundImage.numWebp') 1x)) {
+    & {background-image: -webkit-image-set(theme('backgroundImage.numWebp') 1x) !important; }
+  }
+}
+
+.before\:bg-products::before {
+  background-image: theme('backgroundImage.products') !important;
+
+  @supports (background-image: -webkit-image-set(theme('backgroundImage.productsWebp') 1x)) {
+    & {background-image: -webkit-image-set(theme('backgroundImage.productsWebp') 1x) !important; }
+  }
+}
+
+.before\:bg-texture::before {
+  background-image: theme('backgroundImage.texture') !important;
+
+  @supports (background-image: -webkit-image-set(theme('backgroundImage.textureWebp') 1x)) {
+    & {background-image: -webkit-image-set(theme('backgroundImage.textureWebp') 1x) !important; }
+  }
+}
+
+.before\:bg-blog::before {
+  background-image: theme('backgroundImage.blog') !important;
+
+  @supports (background-image: -webkit-image-set(theme('backgroundImage.blogWebp') 1x)) {
+    & {background-image: -webkit-image-set(theme('backgroundImage.blogWebp') 1x) !important; }
+  }
+}
+
+.before\:bg-footer::before {
+  background-image: theme('backgroundImage.footer') !important;
+
+  @supports (background-image: -webkit-image-set(theme('backgroundImage.footerWebp') 1x)) {
+    & {background-image: -webkit-image-set(theme('backgroundImage.footerWebp') 1x) !important; }
+  }
+}

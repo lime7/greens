@@ -1,0 +1,87 @@
+<footer
+  class="
+    mt-8
+    md:mt-12
+    lg:mt-27
+  ">
+  <div
+    class="
+      bg-footer
+      bg-cover
+      bg-top
+      bg-no-repeat
+    ">
+    <div
+      class="
+        lg:container
+        px-4
+        pt-20
+        pb-6
+        lg:pb-12
+      ">
+      <div class="grid grid-cols-12 gap-4">
+        <div class="col-span-12 sm:col-span-6 lg:col-span-4">
+          <div class="mb-4">
+            <a
+              href="/"
+              class="
+                inline-flex
+                items-center
+                justify-center
+              ">
+              @require('../components/brand.html')
+              <span
+                class="
+                  block
+                  text-2xl
+                  leading-9
+                  font-semibold
+                  uppercase
+                  tracking-[3px]
+                  text-white
+                ">Greens</span>
+            </a>
+          </div>
+          <div class="mb-6">
+            <p
+              class="
+                text-sm
+                leading-6
+                text-white
+                w-4/5
+              ">
+              Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.
+            </p>
+          </div>
+          <div class="mb-6">
+            @require('../components/socials.html')
+          </div>
+        </div>
+
+        <div class="col-span-12 sm:col-span-6 lg:col-span-4">
+          @require('../components/contact.html')
+        </div>
+
+        <div class="col-span-12 lg:col-span-4 mb-6 sm:pt-4 md:pt-8">
+          @require('../components/app.html')
+        </div>
+      </div>
+    </div>
+
+    <div class="relative pt-7 pb-6 border-t border-gray">
+      <div class="lg:container px-4">
+        <div class="grid grid-cols-12 md:grid-cols-12 gap-4">
+          <div class="col-span-12 md:col-span-6 text-center md:text-start">
+            @require('../components/copyright.html')
+          </div>
+          <div class="col-start-4 col-span-6 md:col-span-4 text-center md:text-right">
+            @require('../components/payments.html')
+          </div>
+          <div class="col-span-3 md:col-span-2 text-right">
+            @require('../components/up.html')
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
