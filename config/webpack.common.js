@@ -59,9 +59,9 @@ module.exports = {
       templateParameters: {
         analytics: "Google Analytics ID",
         author: "Name Name",
-        description: "Description text",
-        keywords: "webpack, webpack5",
-        title: "Blog Title Webpack5 SEV",
+        description: "Green is a test landing page for ordering organic products.",
+        keywords: "landing, tailwindcss, webpack5",
+        title: "Greens Blog",
         url: "https://example.com"
       }
     })
