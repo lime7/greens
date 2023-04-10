@@ -2848,9 +2848,6 @@ body{
   .lg\:h-29{
     height: 7.5rem;
   }
-  .lg\:min-h-screen{
-    min-height: 100vh;
-  }
   .lg\:w-16{
     width: 4rem;
   }
@@ -3074,7 +3071,14 @@ body{
   .\32xl\:h-screen{
     height: 100vh;
   }
+  .\32xl\:min-h-screen{
+    min-height: 100vh;
+  }
   .\32xl\:items-center{
     align-items: center;
+  }
+  .\32xl\:py-52{
+    padding-top: 13rem;
+    padding-bottom: 13rem;
   }
 }
