@@ -121,7 +121,8 @@ module.exports = {
       maxWidth: {
         "auto": "inherit",
         "8": "8rem",
-        "10": "10rem"
+        "10": "10rem",
+        "max-w-screen-2xl": "91.5rem"
       },
       letterSpacing: {
       },
